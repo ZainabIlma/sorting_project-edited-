@@ -1,0 +1,225 @@
+* {justify-items: auto;
+  justify-content:space-between;
+  margin: 5px;
+  padding: 2px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+body{
+  background:radial-gradient(
+    pink,violet,skyblue ,aqua
+  );
+}
+
+nav {
+  background-color:#1c1b1b ;
+  /* background-color: blue; */
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  display:flex
+  -ms-grid-columns: 30% 60%;
+      grid-template-columns: 30% 60%;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+  padding: 0% 5%;
+  animation-name: hhh;
+  transition-duration:2s;
+  animation-iteration-count: infinite;
+
+  animation-timing-function: ease-in;
+}
+@keyframes hhh {
+  2%{
+    background-color: rgb(105, 76, 210);
+  }
+  25%{
+    background-color: coral;
+  }
+  100%{
+background-color:black;
+  }
+}
+
+nav .array-inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_size {
+  
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_speed {
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_generate {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 4% 0% 0% 0%;
+  padding-left: 20%;
+}
+
+nav .array-inputs #a_generate:hover {
+  cursor: pointer;
+}
+
+nav .header_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .header_right .nav-heading {
+  display: inline-block;
+  font-size: xxx-large;
+  padding: 3% 0%;
+}
+
+nav .header_right .algos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (16.66667%);
+      grid-template-columns: repeat(6, 16.66667%);
+  place-content: center;
+  padding: 2% 0%;
+}
+
+.btn{
+  margin-left: 10px;
+}
+
+nav .header_right .algos button {
+  
+  display: flex;
+  
+  background-color: #1c1b1b;
+    border-color: aqua;
+    border-style: solid;
+    border:  1px solid;
+    color:aqua;
+    /* height:36px; */
+    border-radius: 10px;
+    /* margin-right: 10px; */
+    cursor:pointer;
+    /* box-shadow:2px 2px 5px rgba(0,0,0,0.30); */
+    /* transition:background-color 1s;  */
+    /* padding-left: 4px;
+    padding-right: 4px;
+    vertical-align:middle; */
+ 
+}
+
+@media screen {
+  .nav .header_right .algos button{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+nav .header_right .algos button:hover {
+  height:38px;
+    
+    background-color:aqua ;
+    color:black;
+}
+nav .header_right .algos button:active{
+  opacity:0.5;
+}
+
+nav .header_right .algos .butt_locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_selected {
+  background-color: white;
+  color: skyblue;
+}
+
+nav .header_right .algos .butt_selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_unselected:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+}
+
+section .Complexity_Containers {
+  margin-top: 20%;
+}
+
+section .Complexity_Containers .Pair_Definitions {
+  margin-top: 20%;
+}
+
+section .Complexity_Containers .Pair_Definitions p {
+  display: inline;
+}
+
+section .Complexity_Containers .Pair_Definitions p.Sub_Heading {
+  font-size: medium;
+  text-transform: none;
+}
+
+section #Info_Cont1 {
+  padding: 20% 10%;
+}
+
+section #Info_Cont1 h3 {
+  text-decoration: underline;
+}
+
+section #array_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+
+section #Info_Cont2 {
+  padding: 20% 10%;
+}
+
+section #Info_Cont2 h3 {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+.nav-heading{
+  color:aqua;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
